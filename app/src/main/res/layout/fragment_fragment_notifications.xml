@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentNotifications"
+    android:background="@drawable/a">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="12dp"
+        android:background="@drawable/login_button"
+        android:id="@+id/searchusers"
+        android:text="Search Users"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@drawable/name"
+        android:layout_below="@+id/searchusers"
+        android:layout_height="match_parent"
+        android:padding="13dp"
+        android:id="@+id/conv_list"
+        android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+</FrameLayout>
